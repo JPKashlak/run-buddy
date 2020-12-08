@@ -1,7 +1,7 @@
-# Run Buddy
+# Run Buddy, Inc
 
 ## Purpose
-A website that offers fitness training services.
+A website that offers fitness training services. 
 
 ## Built With
 * HTML
@@ -13,4 +13,4 @@ https://jpkashlak.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by Jacob Pearson Kashlak
 
-
+### ©️2019 Run Buddy, Inc 
