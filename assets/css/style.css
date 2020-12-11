@@ -200,7 +200,7 @@ section {
     text-align: center;
 }
 .steps {
-    background: #var(--primary-color);
+    background: var(--primary-color);
 }
 .step {
     margin: 50px auto;
@@ -331,7 +331,7 @@ section {
     font-style: normal;
 }
 .contact-info a {
-    color: #var(--primary-color);
+    color: var(--primary-color);
 }
 .contact-form input, .contact-form textarea {
     border: 1px solid var(--secondary-color);
@@ -364,7 +364,7 @@ section {
     background: var(--tertiary-color);
 }
 footer {
-    background: #var(--primary-color)8;
+    background: var(--primary-color)8;
     width: 100%;
     padding: 40px 35px;
     display: flex;
