@@ -265,6 +265,7 @@ section {
     background: var(--secondary-color);
     color: var(--primary-color);
     flex: 1;
+    overflow: hidden;
 }
 .trainer-bio {
     padding: 25px; 
@@ -272,11 +273,13 @@ section {
 }
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 .trainer-bio p {
     font-size: 17px;
@@ -314,17 +317,33 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+.trainer:hover .trainer-img::after {
+    opacity: 1;
 }
 .trainer-img h3 {
     position: relative;
     z-index: 5001;
     font-size: 28px;
     margin-bottom: 5px;
+    top: 200px;
+    opacity: 0;
+    transition: .6s;
 }
 .trainer-img h4 {
     position: relative;
     z-index: 5000;
     font-size: 22px;
+    top: 200px;
+    opacity: 0;
+    transition: .6s;
+    transition-delay: .2s;
+}
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+    opacity: 1;
 }
 .text-left {
     text-align: left;
@@ -546,6 +565,12 @@ footer a {
         writing-mode: unset;
         grid-column: 1 / -1;
         grid-row: -1
+    }
+    .trainer-img h3, .trainer-img h4, .trainer-img::after {
+        display: none;
+    }
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
     }
 }
 /*Smartphones and Smaller*/
